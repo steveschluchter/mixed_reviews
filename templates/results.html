@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h3 style="text-align: center;">{% block headers %} Analysis of Reviews of <br> {{business_info[0]}} <br> {{business_info[1]}},{{business_info[2]}} {% endblock %}</h3>
+    
+    <hr>
+
+    <div class="container">
+    <div class="row">
+    
+    <div class="col d-flex align-items-center">
+    <img src={{ path_to_graphic }}>
+    </div>
+    </div>
+    </div>
+
+    <h3>Below are the {{ length }} reviews if you want to read them.</h3>
+    
+    {% for i in range(length): %}
+        
+        <hr>
+        <p>{{ posts[i][0] }}</p>
+
+    {% endfor %}
+
+{% endblock %}

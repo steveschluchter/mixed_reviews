@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2 class="header"> Mixed Reviews Error Page</h2>
+<h3 class="header">If you're seeing this, it's because one of a few things happened:</h3>
+<ul style="text-align: left;">
+    <li>there was no yelp business_id found to match your alias (check your url that you entered), or </li>
+    <li>there were no reviews to analyze (none present in the Yelp Academic Dataset), or</li>
+    <li>there was no match among the known businesses in the Yelp Academic Dataset or,</li>
+    <li>a gremlin did something unfortunate.</li>
+</ul>
+
+{% endblock %}

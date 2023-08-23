@@ -1,0 +1,34 @@
+.header{
+    border:none;
+    text-align:center;
+    margin:2em;
+}
+
+html{
+    background-color:#9BA4B5;
+    text-align:center;
+}
+
+
+hr{
+    top:20px;
+    background:#212A3E;
+    height:10px;
+    color:#212A3E;
+}
+
+p{
+    margin:1em;
+    /*padding: 1em;*/
+    text-align:left;
+}
+
+
+button{
+    margin-left: 2em;
+}
+
+a{
+    color:purple;
+    text-decoration:none;
+}

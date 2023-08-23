@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="header">{% block header %} Mixed Reviews Search Page {% endblock %}</h2>
+<h3 class="header"> This app will analyze Yelp restaurant reviews for sentiments associated to food, price, service, and bathrooms.</h3>
+<h4 class="header"> This app is powered by the <a href='https://www.yelp.com/dataset' target="_blank"><img src='../static/img/yelp_logo.png'> Academic Dataset</a>.</h4>
+<form method="post">
+
+    <div class="form-group" style="margin:2em;">
+        <textarea  name="url" placeholder="Paste your restaurant's Yelp URL here."
+                   class="form-control">{{ request.form['url'] }}</textarea>
+    </div>   
+
+    <div class="form-group d-flex align-items-start">
+        <button type="submit" class="button text-bg-success rounded-pill" style="margin-top:1em; margin-bottom:4em;">Search!</button>
+    </div>
+</form>
+
+{% endblock %}
+
