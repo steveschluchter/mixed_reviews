@@ -9,7 +9,7 @@
 
 Mixed Reviews is a Flask app.
 
-This webapp ingests a yelp restaurant reviews url and displays an aspect based sentiment of the reviews according to the aforementioned model's predictions of the sentiments associated to: the food, price, service, and bathroom.  This analysis is in the form of a horizontal stacked bar chart produced by matlplotlib.
+This webapp ingests a yelp restaurant reviews url and displays an aspect based sentiment analysis of the reviews according to the aforementioned model's predictions of the sentiments associated to: the food, price, service, and bathroom.  This analysis is in the form of a horizontal stacked bar chart produced by matlplotlib.
 
 The webapp does a calculation of the probabilistic assessment of the Aspect Based Sentiment Analysis, which I hastily named the Steve Score.  The Steve Score is an effort to use the insightful, albeit somewhat 'noisy' probabilistic assessment to determine the strength of the overall assessment by considering all of the probabilities generated: positive, negative, and neutral.  The formula for the Steve Score is: $$ steve\_score = \frac{p(positive) - p(negative)}{p(neutral) + 10^{-12}}. $$
 
